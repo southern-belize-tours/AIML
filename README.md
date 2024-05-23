@@ -17,17 +17,22 @@ This was done as part of a [Kaggle Playground Series Competition](https://www.ka
 ### 🦾 Steel Plate
 This was done as part of a [Kaggle Playground Series Competition](https://www.kaggle.com/c/playground-series-s4e3) to run multicategorical classification to classify the defect type on steel plates. The dataset was particularly unique because the defect categories were not mutually exclusive (e.g. a steel plate could have both a ```K Scratch``` and ```bumps```), so the classification was really for multiple models running binary classification.
 
-This notebook's GBT model scored ```0.8907``` **Area under ROC Curve** which placed it ranking within the **top 50 of results**. With access to more data, or perhaps synthetic data on some of the severely underrepresented categories (such as **bumps**), this notebook's models could perform with notable improvements.
+- **Model**: GBT
+- **Score**: 0.8907 AUC, ranked in the top 50
+- **Improvements**: Use more data, generate synthetic data for underrepresented categories
 
 ### 🍄 Mushroom Edible or Poisonous
 The programming in this directory looks at an [open source dataset from UCI](https://www.kaggle.com/datasets/uciml/mushroom-classification) categorizing various mushrooms as edible or poisionous. While one can use this dataset to create models (especially Random Tree Forests and other hierarchical classifiers) that are extremely highly performant, the most interesting take-aways from the work performed here was in the data analysis.
 
-There are several categories (such as the diameter of the mushroom cap) in which a specific value of the target variable (e.g. edible) is the only value, meaning that many machine learning algorithms trained on this dataset may poorly generalize and lead users to eating poisonous mushrooms.
+- **Key Insights**: Some features (e.g., cap diameter) perfectly predict edibility, risking poor generalization
+- **Clustering**: Clustering algorithms could improve accuracy by leveraging highly-dimensional data
 
-This also illustrates some of the potential benfits of clustering algorithms: through building algorithms that would allow identification of mushroom species based on clusters, the accuracy would be extremely-performant and allow leveraging of highly-dimensional data such as this.
 
 ### 🌸 Petals
 The [classic iris dataset](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html) is examined in this notebook. We train a basic logistic regression algorithm to perfectly classify between the three geni of iris, with the help of some feature engineering, such as creating ratios from continuous features.
+
+- **Model**: Logistic Regression
+- **Result**: Perfect classification with engineered features
 
 ### 📝 MNIST
 Another [classic dataset on handwritten digits](https://www.kaggle.com/datasets/hojjatk/mnist-dataset).
