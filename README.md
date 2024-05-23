@@ -10,9 +10,11 @@ The work done in this repository is exclusively authored by Ian Feekes, who can 
 ### 🦪 Abalone
 This was done as part of a [Kaggle Playground Series Competition](https://www.kaggle.com/competitions/playground-series-s4e4) running regression on Abalone Shell Rings (Age) given the difficulty in collecting the ring data in the field.
 
-This notebook's GBT mobel scored ```0.14982``` on the **RMSLE** evaluation metric, ranking it within the top 100 resuls. Improvements could be made by training the models in such a way to optimize the scoring metric, training the root of the data as part of preprocessing, or optimizing the data based on underestimations since **RMSLE** punishes overestimations notably more than underestimations.
+- **Model**: Gradient Boosting Trees (GBT)
+- **Score**: 0.14982 RMSLE, ranked in the top 100
+- **Improvements**: Optimize scoring metric, preprocess root of data, focus on underestimations
 
-### Steel Plate
+### 🦾 Steel Plate
 This was done as part of a [Kaggle Playground Series Competition](https://www.kaggle.com/c/playground-series-s4e3) to run multicategorical classification to classify the defect type on steel plates. The dataset was particularly unique because the defect categories were not mutually exclusive (e.g. a steel plate could have both a ```K Scratch``` and ```bumps```), so the classification was really for multiple models running binary classification.
 
 This notebook's GBT model scored ```0.8907``` **Area under ROC Curve** which placed it ranking within the **top 50 of results**. With access to more data, or perhaps synthetic data on some of the severely underrepresented categories (such as **bumps**), this notebook's models could perform with notable improvements.
@@ -61,5 +63,5 @@ Again, the highest contenders among this competition (who aren't hard-coding the
 ### 📚 Courses
 This directory contains work done to continue my education in AI/ML and Data Science, primarily through IBM Learning and Harvard courses.
 
-### CO2 Rwanda
+### 💨 CO2 Rwanda
 This notebook is simply EDA on the CO2 Emissions in Rwanda.
