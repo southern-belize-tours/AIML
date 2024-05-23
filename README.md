@@ -1,5 +1,5 @@
 # 🤖 AIML
-Public Repo of AI/ML projects and Kaggle Competitions undertaken
+Public Repo of AI/ML projects, Kaggle Competitions, and self-learning undertaken
 
 ## Summary
 The work done in this repository is exclusively authored by Ian Feekes, who can be contacted via the following:
@@ -27,8 +27,39 @@ This also illustrates some of the potential benfits of clustering algorithms: th
 ### 🌸 Petals
 The [classic iris dataset](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html) is examined in this notebook. We train a basic logistic regression algorithm to perfectly classify between the three geni of iris, with the help of some feature engineering, such as creating ratios from continuous features.
 
+### 📝 MNIST
+Another [classic dataset on handwritten digits](https://www.kaggle.com/datasets/hojjatk/mnist-dataset).
+You can also download the data with python commands:
+```python
+from keras.datasets import mnist
+```
+The work done in this directory is basic deep learning using ANNs to predict digits.
+
+### 🚬 Smoking
+This directory explores a [kaggle playground competition](https://www.kaggle.com/datasets/kukuroo3/body-signal-of-smoking).
+```sh
+kaggle datasets download -d kukuroo3/body-signal-of-smoking
+```
+The notebook runs a full machine learning pipeline with domain analysis, EDA, feature engineering, building and tuning a neural network, and submissions.
+
+### 🚀 Space Titanic 
+Work done in this directory is a part of a [kaggle playground competition](https://www.kaggle.com/competitions/spaceship-titanic) looking at synthetic data determining whether or not someone gets transported to another dimension during the tragedy of the spaceship titanic. The data can also be downloaded with the kaggle command:
+```sh
+kaggle competitions download -c spaceship-titanic
+```
+The competition is scored with the **classification accuracy** metric, of which my best submission performs at ```80%``` flat. The notebook runs a full machine learning pipeline, creating a GradientBoostedClassifier to perform predictions and submit the notebook results.
+
+Performance could be improved by $ > 1$ if the notebook were to implement NLP on the passenger names. I see this as less-useful regarding real-world applications and the time it would take me to implement the marginal returns.
+
+### 🚢 Titanic
+Models produced in this directory's scripts perform with an ```80%``` **classification accuracy** with regards to predicting whether one will perish in the titanic. These models are trained on [kaggle's titanic dataset](https://www.kaggle.com/competitions/titanic/data) which can also be downloaded via api:
+```sh
+kaggle competitions download -c titanic
+```
+Again, the highest contenders among this competition (who aren't hard-coding the actual titanic survirors in their submissions) use NLP on the passengers names, which is not of much statistical value, simply a corner-cut to win marginal performance gains.
+
 ### 📚 Courses
 This directory contains work done to continue my education in AI/ML and Data Science, primarily through IBM Learning and Harvard courses.
 
 ### CO2 Rwanda
-This notebook is simnply EDA on the CO2 Emissions in Rwanda.
+This notebook is simply EDA on the CO2 Emissions in Rwanda.
