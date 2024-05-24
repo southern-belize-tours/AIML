@@ -6,12 +6,12 @@ The work done in this repository is exclusively authored by Ian Feekes, who can 
 * 📧 Email: ianfeekes@gmail.com
 * 💻 [Github](github.com/southern-belize-tours) *
 
-![alt text](image-2.png)
+![github account](image-1.png)
 * 🙋‍♂️ [Linkedin](https://linkedin.com/in/ianfeekes)
 
-![alt text](image.png)
+![linkedin account](image.png)
 
-*ℹ️ This is for work done for my tour websites [southernbelizetours.com](https://southernbelizetours.com) and [cave-tubing.net](https://cave-tubing.net)
+<div style="font-size: 10px">* ℹ️ This is for work done for my tour websites <a href="https://southernbelizetours.com">southernbelizetours.com</a> and <a href="https://cave-tubing.net">cave-tubing.net</a></div>
 
 ## Directories
 ### 📚 Courses
